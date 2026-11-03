@@ -1,5 +1,7 @@
 Markdown Styler adjusts how rendered Markdown looks in the Paseo app without replacing the built-in renderer. It injects a small stylesheet on web clients (desktop and browser) that covers chat replies, file previews, plan cards and other Markdown surfaces.
 
+Unlike chat-replacement plugins (Beautiful Chat, Better Paseo), it keeps Paseo's native chat view as the renderer and only styles its output, so upstream rendering features land immediately on Paseo updates instead of waiting for plugin re-implementation.
+
 A live preview on the settings page renders sample headings, bold text and highlights through Paseo's own Markdown pipeline, so every change shows before leaving the page.
 
 ## What it can change
@@ -9,7 +11,7 @@ A live preview on the settings page renders sample headings, bold text and highl
 - Heading level indicators: an optional # / ## / ### marker before each heading, default off.
 - Custom CSS appended after the generated rules, written in a multi-line editor with drag-to-resize.
 
-Swatch taps and preset, size and toggle changes apply immediately; custom color values and custom CSS use a save button.
+Swatch taps and size and toggle changes apply immediately; custom color values and custom CSS use a save button.
 
 ## How it works
 
