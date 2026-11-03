@@ -1,5 +1,7 @@
 # Markdown Styler
 
+<img src="assets/icon.png" alt="Markdown Styler icon" width="128" height="128" />
+
 ![Markdown Styler settings with live preview](assets/screenshot.webp)
 
 A [Paseo](https://paseo.sh) plugin that adjusts how rendered Markdown looks in the Paseo app — heading sizes, bold and highlight colors, optional heading level indicators and custom CSS — without replacing the built-in renderer. The settings page includes a live preview rendered through Paseo's own Markdown pipeline.
