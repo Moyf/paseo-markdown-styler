@@ -2,6 +2,7 @@
   "id": "paseo-markdown-styler",
   "name": "Markdown Styler",
   "description": "Restyle rendered Markdown: heading sizes, bold and highlight colors, level indicators and custom CSS, with a live preview.",
+  "media": ["assets/screenshot.webp"],
   "translations": {
     "zh-CN": {
       "name": "Markdown 样式",
