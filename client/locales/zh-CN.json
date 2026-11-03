@@ -1,0 +1,76 @@
+{
+  "title": "Markdown 样式",
+  "loading": "正在读取样式设置…",
+  "reloadLabel": "重新读取设置",
+  "reloadAction": "刷新",
+  "resetLabel": "恢复默认设置",
+  "resetAction": "重置",
+  "enable": {
+    "label": "启用样式注入",
+    "hint": "关闭后立即恢复主题默认渲染"
+  },
+  "emphasisPreset": {
+    "label": "强调色预设",
+    "none": "无",
+    "custom": "自定义",
+    "violet": "紫色强调",
+    "amber": "琥珀强调",
+    "blue": "蓝色强调"
+  },
+  "heading": {
+    "h1": "H1 字号",
+    "h2": "H2 字号",
+    "h3": "H3 字号",
+    "followTheme": "跟随主题",
+    "small": "小",
+    "medium": "中",
+    "large": "大",
+    "extraLarge": "特大",
+    "sizeOption": "{{label}}（{{px}}px）",
+    "customPx": "自定义（{{px}}px）"
+  },
+  "indicator": {
+    "label": "标题层级指示",
+    "hint": "在标题前显示 # / ## / ### 层级标记"
+  },
+  "preview": {
+    "title": "预览",
+    "h1": "一级标题",
+    "h2": "二级标题",
+    "h3": "三级标题",
+    "body": "加粗文本 **加粗文字**、高亮 ==高亮文字==，以及紧跟标点的 **加粗：**示例。",
+    "tryHint": "在下方修改配置，并在这里试试预览效果。",
+    "reminderBefore": "修改完毕后",
+    "reminderBold": "记得保存并应用",
+    "reminderAfter": "。",
+    "unsupported": "当前客户端不支持 ==高亮== 渲染语法；该能力目前仅 Moyf 版本提供。"
+  },
+  "color": {
+    "headingColor": "标题颜色",
+    "headingColorPlaceholder": "#RRGGBB，留空跟随主题",
+    "boldColor": "加粗颜色",
+    "boldColorPlaceholder": "#RRGGBB，留空跟随主题",
+    "highlightBackground": "高亮底色",
+    "highlightBackgroundPlaceholder": "#RRGGBBAA，留空跟随主题",
+    "highlightTextColor": "高亮文字色",
+    "highlightTextColorPlaceholder": "#RRGGBB，留空继承正文",
+    "emptySwatch": "无",
+    "followTheme": "跟随主题",
+    "error": "{{label}}格式应为 #RRGGBB 或 #RRGGBBAA，留空跟随主题"
+  },
+  "customCss": {
+    "label": "自定义 CSS",
+    "hint": "多行书写，随生成的规则一起注入",
+    "resizeHandle": "拖动调整输入框高度",
+    "tooLong": "自定义 CSS 超过 8000 字符"
+  },
+  "save": {
+    "label": "保存自定义颜色和 CSS",
+    "action": "保存并应用"
+  },
+  "resetAll": {
+    "label": "恢复默认",
+    "action": "重置"
+  },
+  "platformHint": "CSS 注入只在桌面端和浏览器端生效；这里的设置会保存，但手机端渲染不变。"
+}

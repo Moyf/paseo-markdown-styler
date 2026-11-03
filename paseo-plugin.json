@@ -1,0 +1,14 @@
+{
+  "id": "paseo-markdown-styler",
+  "name": "Markdown Styler",
+  "description": "Restyle rendered Markdown: heading sizes, bold and highlight colors, level indicators and custom CSS, with a live preview.",
+  "translations": {
+    "zh-CN": {
+      "name": "Markdown 样式",
+      "description": "调整 Markdown 渲染样式：标题字号、加粗、高亮、层级指示与自定义 CSS，带实时预览。"
+    }
+  },
+  "requirements": {
+    "paseo": ">=0.14.0"
+  }
+}

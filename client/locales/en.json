@@ -1,0 +1,76 @@
+{
+  "title": "Markdown styling",
+  "loading": "Loading style settings…",
+  "reloadLabel": "Reload settings",
+  "reloadAction": "Reload",
+  "resetLabel": "Restore default settings",
+  "resetAction": "Reset",
+  "enable": {
+    "label": "Inject styles",
+    "hint": "Turning off immediately restores theme rendering"
+  },
+  "emphasisPreset": {
+    "label": "Emphasis color preset",
+    "none": "None",
+    "custom": "Custom",
+    "violet": "Violet emphasis",
+    "amber": "Amber emphasis",
+    "blue": "Blue emphasis"
+  },
+  "heading": {
+    "h1": "H1 size",
+    "h2": "H2 size",
+    "h3": "H3 size",
+    "followTheme": "Follow theme",
+    "small": "Small",
+    "medium": "Medium",
+    "large": "Large",
+    "extraLarge": "Extra large",
+    "sizeOption": "{{label}} ({{px}}px)",
+    "customPx": "Custom ({{px}}px)"
+  },
+  "indicator": {
+    "label": "Heading level indicators",
+    "hint": "Show # / ## / ### before headings"
+  },
+  "preview": {
+    "title": "Preview",
+    "h1": "Heading level 1",
+    "h2": "Heading level 2",
+    "h3": "Heading level 3",
+    "body": "Bold **bold text**, highlight ==highlighted text==, and punctuation-adjacent **bold:** text.",
+    "tryHint": "Change the settings below and watch the preview update here.",
+    "reminderBefore": "Remember to ",
+    "reminderBold": "save and apply",
+    "reminderAfter": " after making changes.",
+    "unsupported": "This client cannot render ==highlight== syntax. That capability currently ships only in the Moyf build."
+  },
+  "color": {
+    "headingColor": "Heading color",
+    "headingColorPlaceholder": "#RRGGBB, empty to follow the theme",
+    "boldColor": "Bold color",
+    "boldColorPlaceholder": "#RRGGBB, empty to follow the theme",
+    "highlightBackground": "Highlight background",
+    "highlightBackgroundPlaceholder": "#RRGGBBAA, empty to follow the theme",
+    "highlightTextColor": "Highlight text color",
+    "highlightTextColorPlaceholder": "#RRGGBB, empty to inherit body text",
+    "emptySwatch": "None",
+    "followTheme": "Follow theme",
+    "error": "{{label}} must be #RRGGBB or #RRGGBBAA, or empty to follow the theme"
+  },
+  "customCss": {
+    "label": "Custom CSS",
+    "hint": "Multi-line; injected after the generated rules",
+    "resizeHandle": "Drag to resize the editor",
+    "tooLong": "Custom CSS exceeds 8000 characters"
+  },
+  "save": {
+    "label": "Custom colors and CSS",
+    "action": "Save and apply"
+  },
+  "resetAll": {
+    "label": "Restore defaults",
+    "action": "Reset"
+  },
+  "platformHint": "CSS injection applies on desktop and browser only. Settings are saved, but phone rendering is unchanged."
+}
