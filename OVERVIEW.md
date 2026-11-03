@@ -9,7 +9,7 @@ A live preview on the settings page renders sample headings, bold text and highl
 - Heading level indicators: an optional # / ## / ### marker before each heading, default off.
 - Custom CSS appended after the generated rules, written in a multi-line editor with drag-to-resize.
 
-Four emphasis presets (violet, amber, blue, none) fill the bold and highlight fields at once. Swatch taps and preset, size and toggle changes apply immediately; custom color values and custom CSS use a save button.
+Swatch taps and preset, size and toggle changes apply immediately; custom color values and custom CSS use a save button.
 
 ## How it works
 
