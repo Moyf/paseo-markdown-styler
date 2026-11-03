@@ -241,11 +241,12 @@ function StyleControls({
   const saveDraft = () => {
     const parsed: Partial<MarkdownStyleValues> = {};
     for (const field of COLOR_FIELDS) {
-      if (!COLOR_PATTERN.test(draft[field.key].trim())) {
+      const value = draft[field.key].trim();
+      if (value && !COLOR_PATTERN.test(value)) {
         setDraftError(t("color.error", { label: t(field.labelKey) }));
         return;
       }
-      parsed[field.key] = draft[field.key].trim();
+      parsed[field.key] = value;
     }
     if (draft.customCss.length > 8000) {
       setDraftError(t("customCss.tooLong"));
@@ -492,7 +493,7 @@ const styles = {
   swatchEmpty: { alignItems: "center" as const, justifyContent: "center" as const },
   swatchEmptyLabel: { fontSize: 10 },
   cssInput: { width: "100%" as const },
-  cssField: { gap: 6 },
+  cssField: { gap: 6, paddingHorizontal: 16 },
   resizeHandle: { alignItems: "center" as const, paddingVertical: 6 },
   resizeGrip: { width: 36, height: 4, borderRadius: 2 },
 };
