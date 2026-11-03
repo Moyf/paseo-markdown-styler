@@ -303,13 +303,15 @@ function StyleControls({
         <SettingsCard>
           <View ref={previewRef} style={previewBoxStyle}>
             <Markdown>{previewSample}</Markdown>
+            <View style={styles.previewHints}>
+              <Text style={muted}>{t("preview.tryHint")}</Text>
+              <Text style={muted}>
+                {t("preview.reminderBefore")}
+                <Text style={reminderBoldStyle}>{t("preview.reminderBold")}</Text>
+                {t("preview.reminderAfter")}
+              </Text>
+            </View>
           </View>
-          <Text style={muted}>{t("preview.tryHint")}</Text>
-          <Text style={muted}>
-            {t("preview.reminderBefore")}
-            <Text style={reminderBoldStyle}>{t("preview.reminderBold")}</Text>
-            {t("preview.reminderAfter")}
-          </Text>
           {isWeb && highlightSupport === "unsupported" ? (
             <Text style={muted}>{t("preview.unsupported")}</Text>
           ) : null}
@@ -494,6 +496,7 @@ const styles = {
   swatchEmptyLabel: { fontSize: 10 },
   cssInput: { width: "100%" as const },
   cssField: { gap: 6, paddingHorizontal: 16 },
+  previewHints: { marginTop: 8, gap: 2 },
   resizeHandle: { alignItems: "center" as const, paddingVertical: 6 },
   resizeGrip: { width: 36, height: 4, borderRadius: 2 },
 };
