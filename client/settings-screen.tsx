@@ -33,15 +33,6 @@ type ReadySettings = Extract<SettingsState<typeof preferences.schema>, { status:
 type ColorFieldKey = "headingColor" | "boldColor" | "highlightBackground" | "highlightTextColor";
 type Translate = ReturnType<typeof useTranslation>["t"];
 
-const EMPHASIS_COLORS = {
-  violet: { boldColor: "#b078d0", highlightBackground: "#b078d033" },
-  amber: { boldColor: "#c09664", highlightBackground: "#dcb56a33" },
-  blue: { boldColor: "#6f9dd8", highlightBackground: "#61afef33" },
-  off: { boldColor: "", highlightBackground: "" },
-} satisfies Record<string, Partial<MarkdownStyleValues>>;
-
-type EmphasisKey = keyof typeof EMPHASIS_COLORS;
-
 const SIZE_PRESET_ORDER = ["small", "medium", "large", "extraLarge"] as const;
 
 const SIZE_LABEL_KEYS = {
@@ -195,26 +186,6 @@ function StyleControls({
     () => [styles.resizeGrip, { backgroundColor: theme.colors.border }],
     [theme],
   );
-  const emphasisValue = useMemo(() => {
-    const match = (
-      Object.entries(EMPHASIS_COLORS) as Array<[EmphasisKey, Partial<MarkdownStyleValues>]>
-    ).find(
-      ([, colors]) =>
-        colors.boldColor === settings.values.boldColor &&
-        colors.highlightBackground === settings.values.highlightBackground,
-    );
-    return match?.[0] ?? "";
-  }, [settings.values]);
-  const emphasisOptions = useMemo(
-    () => [
-      { label: t("emphasisPreset.none"), value: "off" },
-      { label: t("emphasisPreset.violet"), value: "violet" },
-      { label: t("emphasisPreset.amber"), value: "amber" },
-      { label: t("emphasisPreset.blue"), value: "blue" },
-      { label: t("emphasisPreset.custom"), value: "" },
-    ],
-    [t],
-  );
 
   const persist = async (next: MarkdownStyleValues) => {
     if (await settings.save(next, settings.revision)) {
@@ -231,11 +202,6 @@ function StyleControls({
 
   const changeSize = (field: "h1Size" | "h2Size" | "h3Size", px: string) => {
     void persist({ ...settings.values, [field]: Number.parseInt(px, 10) });
-  };
-
-  const changeEmphasis = (preset: string) => {
-    if (!preset) return;
-    void persist({ ...settings.values, ...EMPHASIS_COLORS[preset as EmphasisKey] });
   };
 
   const saveDraft = () => {
@@ -324,12 +290,6 @@ function StyleControls({
             hint={t("enable.hint")}
             value={settings.values.enabled}
             onValueChange={(enabled) => void persist({ ...settings.values, enabled })}
-          />
-          <SettingsSelect
-            label={t("emphasisPreset.label")}
-            value={emphasisValue}
-            options={emphasisOptions}
-            onValueChange={changeEmphasis}
           />
           <SettingsSwitch
             label={t("indicator.label")}

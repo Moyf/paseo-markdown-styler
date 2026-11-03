@@ -9,14 +9,6 @@
     "label": "Inject styles",
     "hint": "Turning off immediately restores theme rendering"
   },
-  "emphasisPreset": {
-    "label": "Emphasis color preset",
-    "none": "None",
-    "custom": "Custom",
-    "violet": "Violet emphasis",
-    "amber": "Amber emphasis",
-    "blue": "Blue emphasis"
-  },
   "heading": {
     "h1": "H1 size",
     "h2": "H2 size",

@@ -9,14 +9,6 @@
     "label": "启用样式注入",
     "hint": "关闭后立即恢复主题默认渲染"
   },
-  "emphasisPreset": {
-    "label": "强调色预设",
-    "none": "无",
-    "custom": "自定义",
-    "violet": "紫色强调",
-    "amber": "琥珀强调",
-    "blue": "蓝色强调"
-  },
   "heading": {
     "h1": "H1 字号",
     "h2": "H2 字号",
